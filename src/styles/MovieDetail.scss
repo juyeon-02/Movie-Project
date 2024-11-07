@@ -1,0 +1,61 @@
+
+.movie-detail {
+    position: absolute;
+    display: flex;
+    height: 100vh;
+  }
+ 
+  .movie-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .movie-rating {
+    font-size: 1.4rem;
+  }
+
+  .detail_rating{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  
+  .movie-poster {
+    max-width: 1200px;
+    margin-right: 20px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  
+  h2, h3 {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .movie-overview {
+    font-size: 1.4rem;
+    margin-top: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .movie-genres {
+    .장르{
+      font-size: 1.4rem;
+    }
+    list-style: none;
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+      li{
+        background-color: rgb(35, 25, 25);
+        border: 1px solid wheat;
+        padding : 12px;
+        border-radius: 4px;
+        font-size: 1.2rem;
+    }
+    
+  }
+  

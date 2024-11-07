@@ -1,15 +1,17 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MovieCard from '/src/Components/MovieCard';
 import MovieList from './Components/MovieList';
+import MovieDetail from './Components/MovieDetail';
+
+
 function App() {
   return (
-    <BrowserRouter>
+
       <Routes>
         <Route path="/" element={<MovieList />} />
-        
+       <Route path='/details' element={<MovieDetail/>} />
       </Routes>
-      </BrowserRouter>
   );
 }
 
