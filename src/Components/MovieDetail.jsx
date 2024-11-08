@@ -1,10 +1,11 @@
-import { useEffect, useState } from 'react';
 import movieDetailData from '../data/movieDetailData.json';
 import '/src/styles/MovieDetail.scss'
+import { Link } from 'react-router-dom';
 
 const baseUrl = 'https://image.tmdb.org/t/p/w500';
 
 const MovieDetail = () => {
+  
   const movieData = movieDetailData;
 
   const { poster_path,title,vote_average, genres, overview } = movieData;
@@ -21,6 +22,9 @@ const MovieDetail = () => {
         </div>
 
         <section>
+          <Link to="/">
+          <button className='button-main'>메인페이지</button>
+          </Link>
           <div className='detail_rating'> 
             <h1 className='movie-title'>{title}</h1>
             <p className='movie-rating'>평점 : {vote_average}</p>
