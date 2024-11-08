@@ -5,13 +5,10 @@ import '/src/styles/MovieDetail.scss'
 const baseUrl = 'https://image.tmdb.org/t/p/w500';
 
 const MovieDetail = () => {
-  const [movieData, setMovieData] = useState({});
+  const movieData = movieDetailData;
 
   const { poster_path,title,vote_average, genres, overview } = movieData;
-
-  useEffect(() => {
-    setMovieData(movieDetailData);
-  }, []);
+  
 
   if (!movieData) {
     return <div>페이지를 로딩하는 중..</div>;
