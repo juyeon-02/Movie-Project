@@ -19,8 +19,8 @@ const MovieDetail = () => {
 
   return (
     <div className='movie-detail'>
-        <div>
-          <img src={`${baseUrl}${poster_path}`} className='movie-poster'/>
+        <div className='movie-poster'>
+          <img src={`${baseUrl}${poster_path}`} className='poster'/>
         </div>
 
         <section>

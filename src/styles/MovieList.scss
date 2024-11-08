@@ -1,0 +1,28 @@
+.movie-list {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4,1fr);
+
+  .movie-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(116, 116, 116);
+    transition: transform 0.25s;
+    width: 100%;
+    
+    .제목{
+    color: violet;  
+    }
+    // 카드 hover 시 크기 변화
+    &:hover {
+      transform: scale(1.05);
+    }
+  
+    img {
+      width: 100%;
+      height: 75%;
+    }
+  
+  
+  }
+    
+}
